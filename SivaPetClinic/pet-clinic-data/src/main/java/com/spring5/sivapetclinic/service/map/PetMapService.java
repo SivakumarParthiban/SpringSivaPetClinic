@@ -8,11 +8,12 @@ import org.springframework.stereotype.Service;
 import com.spring5.sivapetclinic.model.Owner;
 import com.spring5.sivapetclinic.model.Pet;
 import com.spring5.sivapetclinic.service.CrudService;
+import com.spring5.sivapetclinic.service.PetService;
 
 
 @Service
 @Profile({"default","map"})
-public class PetMapService extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long>{
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService{
 	
 	@Override
 	public	Set<Pet> findAll(){

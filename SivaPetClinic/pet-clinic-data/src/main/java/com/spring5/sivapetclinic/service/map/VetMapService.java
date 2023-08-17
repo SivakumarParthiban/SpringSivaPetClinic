@@ -5,8 +5,9 @@ import java.util.Set;
 import com.spring5.sivapetclinic.model.Pet;
 import com.spring5.sivapetclinic.model.Vet;
 import com.spring5.sivapetclinic.service.CrudService;
+import com.spring5.sivapetclinic.service.VetService;
 
-public class VetMapService extends AbstractMapService <Vet, Long> implements CrudService<Vet,Long>{
+public class VetMapService extends AbstractMapService <Vet, Long> implements VetService{
 
 	@Override
 	public	Set<Vet> findAll(){
