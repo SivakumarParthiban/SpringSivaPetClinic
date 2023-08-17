@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.javatpoint</groupId>
+    <groupId>spring5.sivapetclinic</groupId>
     <artifactId>Spring-Siva-PetClinic</artifactId>
     <version>1.0</version>
   </parent>
-  <groupId>com.javatpoint</groupId>
+  <groupId>spring5.sivapetclinic</groupId>
   <artifactId>pet-clinic-web</artifactId>
   <version>1.0</version>
   <name>pet-clinic-web</name>
@@ -62,10 +62,6 @@
             <version>2.22.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-        	<groupId>com.spring</groupId>
-        	<artifactId>SpringJPA</artifactId>
-        	<version>1.0</version>
-        </dependency>
+
   </dependencies>
 </project>
