@@ -17,10 +17,17 @@ public class DataLoader implements CommandLineRunner {
 	
 	
 
-	public DataLoader() {
-		ownerService=new OwnerMapService();
-		vetService=new VetMapService();
+
+
+
+	public DataLoader(OwnerService ownerService, VetService vetService) {
+		super();
+		this.ownerService = ownerService;
+		this.vetService = vetService;
 	}
+
+
+
 
 
 

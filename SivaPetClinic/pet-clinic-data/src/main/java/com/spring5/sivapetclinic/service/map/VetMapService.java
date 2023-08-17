@@ -2,11 +2,15 @@ package com.spring5.sivapetclinic.service.map;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
 import com.spring5.sivapetclinic.model.Pet;
 import com.spring5.sivapetclinic.model.Vet;
 import com.spring5.sivapetclinic.service.CrudService;
 import com.spring5.sivapetclinic.service.VetService;
-
+@Service
+@Profile({"default","map"})
 public class VetMapService extends AbstractMapService <Vet, Long> implements VetService{
 
 	@Override

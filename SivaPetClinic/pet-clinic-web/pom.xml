@@ -63,5 +63,10 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+        	<groupId>spring5.sivapetclinic</groupId>
+        	<artifactId>pet-clinic-data</artifactId>
+        	<version>1.0</version>
+        </dependency>
   </dependencies>
 </project>
