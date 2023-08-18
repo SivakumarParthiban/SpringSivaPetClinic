@@ -6,4 +6,4 @@ My version of spring pet clinic application
 - Thymeleaf
 - Java 8
 - Lombok
-- WRO Plugin - Web Resource Optimizer
+- WRO Plugin - Web Resource Optimizer (this is to convert less files to CSS)
