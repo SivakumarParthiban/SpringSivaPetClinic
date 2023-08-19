@@ -6,13 +6,13 @@ import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
-@Entity
+
 public class Visit extends BaseEntity {
-	
+
 	private LocalDate vistTime;
-	
+
 	private String description;
-	
+
 	private Pet pet;
 
 }

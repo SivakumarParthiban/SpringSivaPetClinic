@@ -9,7 +9,7 @@
   </parent>
   <groupId>spring5.sivapetclinic</groupId>
   <artifactId>pet-clinic-data</artifactId>
-  <version>1.0</version>
+  
   <name>pet-clinic-data</name>
   <url>http://maven.apache.org</url>
   <properties>

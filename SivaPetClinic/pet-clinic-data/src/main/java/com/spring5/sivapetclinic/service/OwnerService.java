@@ -5,11 +5,6 @@ import java.util.Set;
 
 import com.spring5.sivapetclinic.model.Owner;
 
-public interface OwnerService extends CrudService<Owner, Long>{
-
-	Owner findByLastName(String lastName);
-	
-	List<Owner> findAllByLastNameLike(String lastName);
-	
+public interface OwnerService extends CrudService<Owner, Long> {
 
 }

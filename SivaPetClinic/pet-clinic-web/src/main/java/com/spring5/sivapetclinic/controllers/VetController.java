@@ -8,15 +8,15 @@ import com.spring5.sivapetclinic.service.VetService;
 
 @Controller
 public class VetController {
-	
+
 	private final VetService vetService;
-	
+
 	public VetController(VetService vetService) {
 		super();
 		this.vetService = vetService;
 	}
 
-	@RequestMapping({"vets","vets/index","vets/index.html"})
+	@RequestMapping({ "vets", "vets/index", "vets/index.html" })
 	public String listVets(Model model) {
 		model.addAttribute("vets", vetService.findAll());
 		return "vets/index";

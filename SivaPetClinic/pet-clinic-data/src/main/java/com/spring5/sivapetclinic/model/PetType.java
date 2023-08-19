@@ -4,9 +4,9 @@ import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
-@Entity
-public class PetType extends BaseEntity{
+
+public class PetType extends BaseEntity {
 
 	public String name;
-	
+
 }

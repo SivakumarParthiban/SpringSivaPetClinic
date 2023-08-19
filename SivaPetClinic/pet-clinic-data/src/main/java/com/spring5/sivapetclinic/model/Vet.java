@@ -6,7 +6,7 @@ import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
-@Entity
-public class Vet extends Person{
-private Set<Speciality> specialities;
+
+public class Vet extends Person {
+	private Set<Speciality> specialities;
 }

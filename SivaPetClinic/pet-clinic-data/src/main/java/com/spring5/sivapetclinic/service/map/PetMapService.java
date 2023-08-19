@@ -10,28 +10,25 @@ import com.spring5.sivapetclinic.model.Pet;
 import com.spring5.sivapetclinic.service.CrudService;
 import com.spring5.sivapetclinic.service.PetService;
 
-
 @Service
-@Profile({"default","map"})
-public class PetMapService extends AbstractMapService<Pet, Long> implements PetService{
-	
+@Profile({ "default", "map" })
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
+
 	@Override
-	public	Set<Pet> findAll(){
+	public Set<Pet> findAll() {
 		return super.findAll();
 	}
-	
+
 	@Override
 	public Pet findById(Long id) {
-		
+
 		return super.findById(id);
 	}
-	
+
 	@Override
-	public Pet save(Pet pet)	{
+	public Pet save(Pet pet) {
 		return super.save(pet);
 	}
-	
-
 
 	@Override
 	public void delete(Pet t) {
@@ -40,8 +37,8 @@ public class PetMapService extends AbstractMapService<Pet, Long> implements PetS
 
 	@Override
 	public void deletById(Long id) {
-		 super.deleteById(id);
-		
+		super.deleteById(id);
+
 	}
 
 }
