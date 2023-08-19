@@ -1,6 +1,8 @@
 package com.spring5.sivapetclinic.bootstrap;
 
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -69,7 +71,10 @@ public class DataLoader implements CommandLineRunner {
 		mikesPet.setPetType(savedDogPetType);
 		mikesPet.setOwner(owner1);
 		mikesPet.setName("Nandu");
-		owner1.getPets().add(mikesPet);
+		Set<Pet> petsOne=new HashSet();
+		
+		petsOne.add(mikesPet);
+		owner1.setPets(petsOne);
 
 		ownerService.save(owner1);
 
@@ -86,7 +91,10 @@ public class DataLoader implements CommandLineRunner {
 		fionsCat.setPetType(savedCatPetType);
 		fionsCat.setOwner(owner2);
 		fionsCat.setName("Bangi");
-		owner2.getPets().add(fionsCat);
+		Set<Pet> petstwo=new HashSet();
+		
+		petstwo.add(fionsCat);
+		owner2.setPets(petstwo);
 
 		ownerService.save(owner2);
 
@@ -100,14 +108,20 @@ public class DataLoader implements CommandLineRunner {
 		Vet vet1 = new Vet();
 		vet1.setFirstName("William");
 		vet1.setLastName("Looney");
-		vet1.getSpecialities().add(savedRadiology);
+		
+		Set <Speciality> vetSpecialities1=new HashSet();
+		vetSpecialities1.add(savedRadiology);
+		
+		vet1.setSpecialities(vetSpecialities1);
 		vetService.save(vet1);
 
 		Vet vet2 = new Vet();
 		vet2.setFirstName("Daren");
 		vet2.setLastName("Davis");
-		vet1.getSpecialities().add(savedSurgery);
-
+		Set <Speciality> vetSpecialities2=new HashSet();
+		vetSpecialities2.add(savedSurgery);
+		
+		vet2.setSpecialities(vetSpecialities2);
 		vetService.save(vet2);
 
 	}
