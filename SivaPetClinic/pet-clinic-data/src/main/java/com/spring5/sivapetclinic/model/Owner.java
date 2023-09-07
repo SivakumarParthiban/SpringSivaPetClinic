@@ -2,6 +2,8 @@ package com.spring5.sivapetclinic.model;
 
 import java.util.Objects;
 import java.util.Set;
+
+import lombok.Builder;
 import lombok.Data;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -11,6 +13,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Data
+@Builder
 @Entity
 @Table(name="owners")
 public class Owner extends Person {

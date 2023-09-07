@@ -58,7 +58,7 @@ public class DataLoader implements CommandLineRunner {
 		surgery.setDescription("Surgery");
 		Speciality savedSurgery = specialityService.save(surgery);
 
-		Owner owner1 = new Owner();
+		Owner owner1 =Owner.builder().build();
 		owner1.setFirstName("Sivakumar");
 		owner1.setLastName("Parthiban");
 		owner1.setAddress("Cloudless bliss dr");
@@ -78,7 +78,7 @@ public class DataLoader implements CommandLineRunner {
 
 		ownerService.save(owner1);
 
-		Owner owner2 = new Owner();
+		Owner owner2 = Owner.builder().build();
 		owner2.setFirstName("Brinda");
 		owner2.setLastName("Kumaraswamy");
 		owner2.setAddress("Cloudless bliss dr");
