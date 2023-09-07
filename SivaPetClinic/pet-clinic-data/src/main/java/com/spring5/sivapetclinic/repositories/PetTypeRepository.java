@@ -1,5 +1,9 @@
 package com.spring5.sivapetclinic.repositories;
 
-public interface PetTypeRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.spring5.sivapetclinic.model.PetType;
+
+public interface PetTypeRepository extends CrudRepository<PetType,Long>{
 
 }

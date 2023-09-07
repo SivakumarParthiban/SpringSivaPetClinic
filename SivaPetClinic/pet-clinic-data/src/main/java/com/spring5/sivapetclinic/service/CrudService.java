@@ -2,6 +2,8 @@ package com.spring5.sivapetclinic.service;
 
 import java.util.Set;
 
+import com.spring5.sivapetclinic.model.Owner;
+
 public interface CrudService<T, ID> {
 	Set<T> findAll();
 
@@ -12,5 +14,6 @@ public interface CrudService<T, ID> {
 	void delete(T t);
 
 	void deletById(ID id);
+
 
 }
